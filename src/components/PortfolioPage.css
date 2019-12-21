@@ -1,0 +1,43 @@
+.portfolioPage__main {
+  align-content: center;
+}
+
+.portfolioPage__item {
+  margin-bottom: 1rem;
+}
+
+.portfolioPage__appImage {
+  width: 50%;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-bottom: 0.75rem;
+  border: 0.05rem solid white;
+}
+
+.portfolioPage__description {
+  background-color: teal;
+  font-size: 0.5rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  width: 10rem;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  top: -20px;
+  border-radius: 0.5rem;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .portfolioPage__main {
+    align-content: center;
+  }
+
+  .portfolioPage__appImage {
+    width: 80%;
+  }
+
+  .portfolioPage__description {
+    width: 7rem;
+  }
+}

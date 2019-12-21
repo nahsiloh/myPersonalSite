@@ -1,0 +1,18 @@
+header,
+p {
+  font-size: 0.6rem;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  text-decoration: none;
+  padding: 0.4rem;
+}
+
+p {
+  margin: 0;
+  padding-top: 0;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+}
