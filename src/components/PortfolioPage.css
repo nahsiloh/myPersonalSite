@@ -7,7 +7,7 @@
 }
 
 .portfolioPage__appImage {
-  width: 50%;
+  width: 40%;
   padding-top: 0.5rem;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
@@ -28,7 +28,7 @@
   border-radius: 0.5rem;
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+@media only screen and (min-width: 375px) and (max-width: 660px) {
   .portfolioPage__main {
     align-content: center;
   }
