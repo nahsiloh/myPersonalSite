@@ -4,6 +4,7 @@ import HomePage from "./components/HomePage";
 import PortfolioPage from "./components/PortfolioPage";
 import Header from "./components/Header";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import ResumePage from "./components/ResumePage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={() => <HomePage />} />
           <Route exact path="/portfolio" component={() => <PortfolioPage />} />
+          <Route exact path="/resume" component={() => <ResumePage />} />
         </Switch>
       </Router>
     </div>

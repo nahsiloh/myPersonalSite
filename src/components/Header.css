@@ -4,7 +4,9 @@ p {
   font-family: "Raleway", sans-serif;
   color: white;
   text-decoration: none;
-  padding: 0.4rem;
+  padding-top: 0.4rem;
+  padding-right: 0.4rem;
+  padding-left: 0.4rem;
 }
 
 p {

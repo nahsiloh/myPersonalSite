@@ -7,7 +7,7 @@ function PortfolioPage() {
     <div className="portfolioPage__main">
       {portfolioData.map(app => {
         return (
-          <div className="portfolioPage__item">
+          <div key={app.title} className="portfolioPage__item">
             <a href={app.url}>
               <img
                 className="portfolioPage__appImage"

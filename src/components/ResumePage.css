@@ -1,0 +1,30 @@
+#resumePage__resume {
+  width: 95%;
+}
+
+.resumePage__Link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 0.4rem;
+  padding-top: 0.4rem;
+}
+
+.resumePage__paragraph {
+  color: black;
+  font-size: 0.5rem;
+}
+
+.fa-file-download {
+  font-size: 0.8rem;
+  color: black;
+  align-items: flex-end;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .fa-file-download {
+    padding-top: 0.6rem;
+    font-size: 0.6rem;
+  }
+}

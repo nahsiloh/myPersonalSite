@@ -14,7 +14,7 @@ function HomePage() {
       <h3>I value design and enjoy the process of creating things.</h3>
       <section className="homePage__links">
         <a href="mailto:lishan1512@gmail.com">
-          <i class="fas fa-envelope"></i>
+          <i className="fas fa-envelope"></i>
         </a>
         <a className="homepage__iconLinks" href="https://github.com/nahsiloh">
           <i className="fab fa-github"></i>

@@ -12,6 +12,10 @@ function Header() {
       <Link id="header__link" to="/portfolio">
         Portfolio
       </Link>
+      <p>|</p>
+      <Link id="header__link" to="/resume">
+        Resume
+      </Link>
     </header>
   );
 }
