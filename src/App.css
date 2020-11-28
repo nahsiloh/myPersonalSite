@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Pacifico|Raleway&display=swap");
-
 :root {
-  background-color: #63af8ba6;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .App {
   text-align: center;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 a:-webkit-any-link {

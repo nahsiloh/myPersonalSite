@@ -1,10 +1,9 @@
 import React from "react";
 import "./App.css";
 import HomePage from "./components/HomePage";
-import PortfolioPage from "./components/PortfolioPage";
+import WorkPage from "./components/WorkPage";
 import Header from "./components/Header";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import ResumePage from "./components/ResumePage";
 
 function App() {
   return (
@@ -13,8 +12,11 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={() => <HomePage />} />
-          <Route exact path="/portfolio" component={() => <PortfolioPage />} />
-          <Route exact path="/resume" component={() => <ResumePage />} />
+          <Route exact path="/work" component={() => <WorkPage />} />
+          <Route exact path="/BUILDINGS" component={() => <WorkPage />} />
+          <Route exact path="/PHOTOGRAPHY" component={() => <WorkPage />} />
+          <Route exact path="/MUSINGS" component={() => <WorkPage />} />
+          <Route exact path="/WRITINGS" component={() => <WorkPage />} />
         </Switch>
       </Router>
     </div>

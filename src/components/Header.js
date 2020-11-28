@@ -3,19 +3,28 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
+  const headerTitleAndRoutes = {
+    HOME: "",
+    WORK: "work",
+    ARCHITECTURE: "architecture",
+    PHOTOGRAPHY: "photography",
+    ILLUSTRATIONS: "illustrations",
+    FASHION: "fashion",
+  };
+
   return (
     <header>
-      <Link id="header__link" to="/">
-        Home
-      </Link>
       <p>|</p>
-      <Link id="header__link" to="/portfolio">
-        Portfolio
-      </Link>
-      <p>|</p>
-      <Link id="header__link" to="/resume">
-        Resume
-      </Link>
+      {Object.keys(headerTitleAndRoutes).map((title) => {
+        return (
+          <ul>
+            <Link id="header__link" to={`/${headerTitleAndRoutes[title]}`}>
+              {title}
+            </Link>
+            <p>|</p>
+          </ul>
+        );
+      })}
     </header>
   );
 }

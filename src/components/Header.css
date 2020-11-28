@@ -1,20 +1,33 @@
-header,
-p {
-  font-size: 0.6rem;
+header {
   font-family: "Raleway", sans-serif;
+  font-size: 0.6rem;
   color: white;
-  text-decoration: none;
-  padding-top: 0.4rem;
-  padding-right: 0.4rem;
-  padding-left: 0.4rem;
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 300;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  padding-left: 0.5rem;
+}
+
+ul p {
+  margin: 0;
 }
 
 p {
-  margin: 0;
+  text-decoration: none;
+  padding-top: 0.4rem;
+  padding-left: 0.5rem;
   padding-top: 0;
 }
 
-header {
-  display: flex;
-  justify-content: flex-end;
+#header__link {
+  cursor: pointer;
 }
