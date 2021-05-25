@@ -1,4 +1,5 @@
 import React from "react";
+// import { Link } from "react-scroll";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
@@ -14,17 +15,26 @@ function Header() {
 
   return (
     <header>
+      <Link id="header__link" to="/">
+        {/* <Link
+        id="header__link"
+        activeClass="active"
+        to="homePage"
+        spy={true}
+        smooth={true}
+      > */}
+        Home
+      </Link>
       <p>|</p>
-      {Object.keys(headerTitleAndRoutes).map((title) => {
-        return (
-          <ul>
-            <Link id="header__link" to={`/${headerTitleAndRoutes[title]}`}>
-              {title}
-            </Link>
-            <p>|</p>
-          </ul>
-        );
-      })}
+      <Link id="header__link" to="/portfolio">
+        {/* <Link id="header__link" to="portfolio" spy={true} smooth={true}> */}
+        Portfolio
+      </Link>
+      <p>|</p>
+      <Link id="header__link" to="/resume">
+        {/* <Link id="header__link" to="resume" spy={true} smooth={true}> */}
+        Resume
+      </Link>
     </header>
   );
 }

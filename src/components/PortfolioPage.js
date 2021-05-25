@@ -4,8 +4,8 @@ import portfolioData from "../assets/portfolioData";
 
 function PortfolioPage() {
   return (
-    <div className="portfolioPage__main">
-      {portfolioData.map(app => {
+    <div id="portfolio" className="portfolioPage__main">
+      {portfolioData.map((app) => {
         return (
           <div key={app.title} className="portfolioPage__item">
             <a href={app.url}>

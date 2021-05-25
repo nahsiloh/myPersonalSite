@@ -7,9 +7,13 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <div className="introduction">
       <Router>
         <Header />
+        {/* <div className="introduction">
+          <Header />
+          <HomePage />
+        </div> */}
         <Switch>
           <Route exact path="/" component={() => <HomePage />} />
           <Route exact path="/work" component={() => <WorkPage />} />
