@@ -1,24 +1,14 @@
 import React from "react";
 import { Link } from "react-scroll";
-// import { Link } from "react-router-dom";
 import "./Header.css";
 
-function Header() {
-  const headerTitleAndRoutes = {
-    HOME: "",
-    WORK: "work",
-    ARCHITECTURE: "architecture",
-    PHOTOGRAPHY: "photography",
-    ILLUSTRATIONS: "illustrations",
-    FASHION: "fashion",
-  };
-
+const Header = () => {
   return (
     <header>
       <Link
         id="header__link"
         activeClass="active"
-        to="homePage"
+        to="home"
         spy={true}
         smooth={true}
       >
@@ -36,15 +26,8 @@ function Header() {
       <Link id="header__link" to="workPage" spy={true} smooth={true}>
         Work
       </Link>
-      {/* <Link id="header__link" to="portfolio" spy={true} smooth={true}>
-        Portfolio
-      </Link>
-      <Link id="header__link" to="resume" spy={true} smooth={true}>
-        {" "}
-        Resume
-      </Link> */}
     </header>
   );
-}
+};
 
 export default Header;

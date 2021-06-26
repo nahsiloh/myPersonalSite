@@ -1,101 +1,9 @@
-.homePage__main {
-  height: 100vh;
-  width: 45vw;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.aboutMe__main {
-  height: 100vh;
-  width: 50vw;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: justify;
-}
-
 .workPage__main {
   height: 100vh;
   width: 50vw;
   margin: auto;
-  /* display: flex; */
-  /* flex-direction: column; */
   justify-content: center;
   padding-top: 4rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  padding: 0;
-  margin: 0;
-  color: black;
-}
-
-h1 {
-  font-family: "Space Mono", monospace;
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2rem;
-  padding-bottom: 0.4rem;
-  font-family: "Raleway", sans-serif;
-}
-
-h3 {
-  font-size: 1rem;
-  font-family: "Raleway", sans-serif;
-  padding-bottom: 0.2rem;
-}
-
-h4,
-p,
-li {
-  font-size: 0.6rem;
-  font-family: "Raleway", sans-serif;
-}
-
-h5 {
-  font-size: 0.5rem;
-  font-family: "Raleway", sans-serif;
-}
-
-button {
-  font-size: 0.5rem;
-  font-family: "Raleway", sans-serif;
-}
-
-#homePage__avatar {
-  width: 2rem;
-  height: 2rem;
-  border: 0.3rem solid black;
-  border-radius: 3rem;
-  margin-top: 1rem;
-}
-
-#homePage__title {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-a img {
-  width: 1rem;
-  padding: 0.4rem;
-}
-
-.fa-envelope,
-.fa-github {
-  padding-top: 0.6rem;
-  font-size: 0.8rem;
-  color: black;
 }
 
 .workPage__buttons {
@@ -153,7 +61,7 @@ a img {
 }
 
 .workPage__description section {
-  padding-left: 1.4rem;
+  padding-left: 0.6rem;
 }
 
 .workPage__description p {
@@ -169,10 +77,11 @@ a img {
 }
 
 .workPage__portfolio {
-  padding-top: 0.8rem;
+  overflow: scroll;
   padding-left: 0;
   display: flex;
   flex-direction: row;
+  width: 40vw;
 }
 
 .workPage__portfolio section {
@@ -198,4 +107,77 @@ a img {
   font-size: 0.45rem;
   font-weight: bold;
   margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .workPage__main {
+    width: 80vw;
+  }
+  .workPage__section {
+    display: flex;
+    flex-direction: column;
+    height: 210px;
+  }
+  .workPage__sub_section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+  }
+  .workPage__roles {
+    display: flex;
+    flex-direction: row;
+  }
+  .workPage__roles p {
+    writing-mode: horizontal-tb;
+    margin-right: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    font-size: 0.4rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  .workPage__buttons {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+  }
+  .workPage__buttons button:first-child {
+    border-top: none;
+  }
+  .workPage__buttons button {
+    height: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-right: 1px solid black;
+    border-bottom: none;
+    font-size: 0.4rem;
+  }
+  .workPage__description {
+    padding-left: 0;
+  }
+  .workPage__description section {
+    padding-left: 0;
+  }
+  .workPage__portfolio {
+    overflow: scroll;
+    width: 80vw;
+    padding-top: 0.2rem;
+  }
+  #workPage__portfolio_image {
+    width: 2.8rem;
+    border-radius: 2rem;
+  }
+  #workPage__portfolio_typology {
+    font-size: 0.35rem;
+  }
+  #workPage__portfolio_stage {
+    font-size: 0.4rem;
+  }
+  .workPage__description ul {
+    padding-left: 0.5rem;
+    text-align: justify;
+  }
 }
