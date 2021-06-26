@@ -1,7 +1,7 @@
-/* @import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Pacifico|Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"); */
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Pacifico|Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 
-.wf-loading:after {
+*/ .wf-loading:after {
   background: url("./assets/img/shadow_background.jpg") no-repeat center center;
 }
 
