@@ -1,10 +1,9 @@
 import React from "react";
-import "./ResumePage.css";
 
 class ResumePage extends React.Component {
   render() {
     return (
-      <div className="resumePage__Main">
+      <div id="resume" className="resumePage__Main">
         <section className="resumePage__Link">
           <p className="resumePage__paragraph">Download Resume</p>
           <a href="https://drive.google.com/file/d/1IMdPjJM4IuzIvi2WBAl0sB9rzeOtbdmX/view?usp=sharing">

@@ -1,0 +1,26 @@
+header {
+  font-size: 0.5rem;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  position: fixed;
+  top: 0.4rem;
+  right: 0.4rem;
+  white-space: nowrap;
+}
+
+#header__link {
+  cursor: pointer;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-right: 2px solid white;
+}
+
+@media (max-width: 768px) {
+  header {
+    font-size: 0.4rem;
+  }
+  #header__link {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
