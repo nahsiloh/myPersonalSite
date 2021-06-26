@@ -53,7 +53,11 @@ const WorkPage = () => {
               {industrySelected === "Architecture" &&
                 jobSelected.portfolio.map((p) => (
                   <section>
-                    <img id="workPage__portfolio_image" src={p.image} />
+                    <img
+                      id="workPage__portfolio_image"
+                      src={p.image}
+                      alt={p.image}
+                    />
                     <h5>{p.name}</h5>
                     <p id="workPage__portfolio_typology">({p.typology})</p>
                     <p id="workPage__portfolio_stage">{p.stage}</p>
