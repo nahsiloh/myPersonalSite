@@ -26,7 +26,7 @@ const Home = () => {
         {Object.keys(links).map((link) => {
           return (
             <a href={links[link]}>
-              <img src={require(`../../assets/svg/${link}.svg`)} />
+              <img src={require(`../../assets/svg/${link}.svg`)} alt={link} />
             </a>
           );
         })}
