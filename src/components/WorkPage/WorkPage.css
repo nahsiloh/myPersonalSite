@@ -93,15 +93,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: black;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(208, 203, 203);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(135, 135, 135);
+  background: gray;
 }
 
 .workPage__portfolio section {
