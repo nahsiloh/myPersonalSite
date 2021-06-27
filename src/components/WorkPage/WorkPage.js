@@ -49,9 +49,9 @@ const WorkPage = () => {
             <p>
               {jobSelected.startDate} - {jobSelected.endDate}
             </p>
-            <div className="workPage__portfolio">
-              {industrySelected === "Architecture" &&
-                jobSelected.portfolio.map((p) => (
+            {industrySelected === "Architecture" && (
+              <div className="workPage__portfolio">
+                {jobSelected.portfolio.map((p) => (
                   <section>
                     <img
                       id="workPage__portfolio_image"
@@ -63,7 +63,8 @@ const WorkPage = () => {
                     <p id="workPage__portfolio_stage">{p.stage}</p>
                   </section>
                 ))}
-            </div>
+              </div>
+            )}
             <ul>
               {jobSelected.roles.map((role) => (
                 <li>{role}</li>

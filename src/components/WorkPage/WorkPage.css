@@ -62,6 +62,7 @@
 
 .workPage__description section {
   padding-left: 0.6rem;
+  padding-bottom: 0.4rem;
 }
 
 .workPage__description p {
@@ -78,10 +79,29 @@
 
 .workPage__portfolio {
   overflow: scroll;
+  overflow-y: hidden;
   padding-left: 0;
   display: flex;
   flex-direction: row;
   width: 40vw;
+}
+
+::-webkit-scrollbar {
+  width: 0.3rem;
+  height: 0.2rem;
+  border-radius: 0.1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(208, 203, 203);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(135, 135, 135);
 }
 
 .workPage__portfolio section {
