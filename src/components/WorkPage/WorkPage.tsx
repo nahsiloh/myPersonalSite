@@ -10,7 +10,7 @@ interface PortfolioObject {
   typology: string;
   stage: string;
   location: string;
-  image: any;
+  image: string;
 }
 
 export interface WorkObject {
