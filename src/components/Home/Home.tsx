@@ -1,14 +1,20 @@
-import React from "react";
+import * as React from "react";
 import "./Home.css";
 import avatar from "../../avatar.jpeg";
 
-const Home = () => {
-  const links = {
-    email: "mailto:lishan1512@gmail.com",
-    linkedin: "http://www.linkedin.com/in/li-shan-ho",
-    github: "https://github.com/nahsiloh",
-  };
+interface Links {
+  email: string;
+  linkedin: string;
+  github: string;
+}
 
+const links: Links = {
+  email: "mailto:lishan1512@gmail.com",
+  linkedin: "http://www.linkedin.com/in/li-shan-ho",
+  github: "https://github.com/nahsiloh",
+};
+
+const Home = () => {
   return (
     <div id="home" className="home__main">
       <section id="home__title">
@@ -23,7 +29,7 @@ const Home = () => {
         </h4>
       </section>
       <section className="home__links">
-        {Object.keys(links).map((link) => {
+        {(Object.keys(links) as Array<keyof Links>).map((link) => {
           return (
             <a href={links[link]}>
               <img src={require(`../../assets/svg/${link}.svg`)} alt={link} />

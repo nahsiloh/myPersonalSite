@@ -11,7 +11,9 @@ import mohhImage from "../../assets/architecture/p&t/MOHH.jpg";
 import NLCSImage from "../../assets/architecture/p&t/NLCS.jpg";
 import punggolNorthImage from "../../assets/architecture/p&t/punggolNorth.jpg";
 
-export const workData = [
+import { WorkObject } from "./WorkPage";
+
+export const workData: WorkObject[] = [
   {
     name: "EYOS",
     position: "Software Engineer",
