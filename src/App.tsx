@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import "./App.css";
 import Home from "./components/Home/Home";
 import AboutMe from "./components/AboutMe/AboutMe";
